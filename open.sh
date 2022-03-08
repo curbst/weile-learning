@@ -1,25 +1,22 @@
 #!/usr/bin/bash
-#This script help you open your app 
+#This script help you open your app
 
 read -p "Enter Username: " Username
-read -p "Enter Password: " Password 
+read -p "Enter Password: " Password
 
-opener () {
-  while true
-  do
+opener() {
+  while true; do
     read -p "What app would you like to open: " app
-    if [ "$app" == "exit" ]
-    then
-	echo "Bye"
-       break
+    if [ "$app" == "exit" ]; then
+      echo "Bye"
+      break
     fi
     open -a $app
   done
 }
 
-if [ "$Username" = "Weile" ] && [ "$Password" = "272004" ]
-then 
-	echo "Access Allowed
+if [ "$Username" = "Weile" ] && [ "$Password" = "272004" ]; then
+  echo "Access Allowed
 
     Welcome to App_Opener
     Your id is 112203
@@ -32,10 +29,8 @@ then
     owners.
     
     "
-	
-	opener
-else 
-	echo "Access Prohibited"
+
+  opener
+else
+  echo "Access Prohibited"
 fi
-
-
