@@ -13,3 +13,4 @@ food[4]=4
 food[5]=''
 food[6]=6
 echo ${#food[@]}
+echo "Bye"
